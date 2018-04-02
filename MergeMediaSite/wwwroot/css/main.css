@@ -1,0 +1,97 @@
+
+body{
+
+    font-family: quicksand;
+	background-color:#2D3F55;
+}
+
+.topsvg{
+
+    content: "";
+    position: absolute;
+    bottom: 100px;
+    width:100px;
+    left:0;
+
+}
+
+.icon{
+    float:right;
+}
+
+.three{
+
+    background-color:#fff;
+}
+
+.four{
+    background-color:#3C7180;
+}
+
+.col-img{
+    width:100%;
+}
+.justify{
+    text-align:justify;
+}
+
+#map{
+    height:600px;
+    width:100%;
+}
+
+.ul-none{
+    list-style-type: none;
+}
+
+.btmborder{
+    
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: #0297FF;
+}
+
+
+
+/* Code to deal with svg file positioning
+
+
+  
+  article::after {
+    content: "";
+    position: absolute;
+    bottom: 100px;
+    height:2em;
+    left: 0;
+    width: 100%;
+    background: url(../svg/wave-before.svg) bottom center;
+    
+    
+  } */
+
+
+
+#particle{
+    height:100vh;
+    width: 100%;
+    bottom:0px;
+}
+
+.btext{
+    color: #f9f3f4;
+    position: absolute;
+    text-align: center;
+    top:40%;
+    width:100%;
+
+}
+.svg{
+    position: absolute;
+    bottom:0px;
+    width:100%;
+}
+
+
+
+
+

@@ -12,6 +12,7 @@ namespace MergeMediaSite.Controllers
     {
         public IActionResult Index()
         {
+            ViewData["Message"] = "Home Page";
             return View();
         }
 
