@@ -23,6 +23,17 @@ namespace MergeMediaSite.Controllers
             return View();
         }
 
+        public IActionResult Technologies()
+        {
+            ViewData["Message"] = "Technologies.";
+            return View();
+        }
+        public IActionResult Portfolio()
+        {
+            ViewData["Message"] = "Portfolio Page";
+            return View();
+        }
+
         public IActionResult Contact()
         {
             ViewData["Message"] = "Your contact page.";

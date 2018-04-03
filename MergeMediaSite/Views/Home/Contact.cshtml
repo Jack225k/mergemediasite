@@ -1,14 +1,7 @@
 ﻿@{
     ViewData["Title"] = "Contact";
 }
-<section id="location">
 
-    <div class="container">
-        <p class="display-4 text-light">Find Us</p>
-        <p class="lead text-light">39 Pioneer Road, Kloof, Durban</p>
-        <div id="map"></div>
-    </div>
-</section>
 
 
 
@@ -52,3 +45,16 @@
     </form>
     <!-- Material form contact -->
 </section>
+
+<section id="location">
+
+    <div class="container">
+        <p class="display-4 text-light">Find Us</p>
+        <p class="lead text-light">39 Pioneer Road, Kloof, Durban</p>
+        <div id="map"></div>
+    </div>
+</section>
+
+
+<script src="~/js/maps.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDUaprX02-eJatOgKdpO-o41wTXKksonGQ&callback=initMap"></script>
