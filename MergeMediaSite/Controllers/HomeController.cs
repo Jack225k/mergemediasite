@@ -33,7 +33,11 @@ namespace MergeMediaSite.Controllers
             ViewData["Message"] = "Portfolio Page";
             return View();
         }
-
+        public IActionResult Hosting()
+        {
+            ViewData["Message"] = "Hosting Page";
+            return View();
+        }
         public IActionResult Contact()
         {
             ViewData["Message"] = "Your contact page.";
