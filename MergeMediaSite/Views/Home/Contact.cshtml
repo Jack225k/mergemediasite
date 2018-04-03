@@ -14,33 +14,32 @@
         <!-- Material input text -->
         <div class="md-form">
 
-            <i class="fa fa-user fa-2x pb-1 grey-text"></i>
-            <input type="text" id="materialFormContactNameEx" placeholder="Your Name" class="form-control">
+            <label class="h4">Name</label>
+            <input type="text" name="Name" id="name" placeholder="Your Name" class="form-control">
 
         </div>
 
         <!-- Material input email -->
         <div class="md-form pt-2">
-            <i class="fa fa-envelope fa-2x pb-1 grey-text"></i>
-            <input type="email" placeholder="Your Email Address" class="form-control">
+            <label class="h4">Email</label>
+            <input type="email" name="Email" id="email" placeholder="Your Email Address" class="form-control">
         </div>
 
         <!-- Material input subject -->
         <div class="md-form pt-2">
-            <i class="fa fa-tag prefix grey-text"></i>
-            <label for="materialFormContactSubjectEx">Subject</label>
-            <input type="text" id="materialFormContactSubjectEx" class="form-control">
+            <label class="h4">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="subject" class="form-control">
         </div>
 
         <!-- Material textarea message -->
         <div class="md-form pt-2">
-            <i class="fa fa-pencil prefix grey-text"></i>
-            <label for="materialFormContactMessageEx">Your message</label>
-            <textarea type="text" id="materialFormContactMessageEx" class="form-control md-textarea" rows="3"></textarea>
+            
+            <label class="h4">Your message</label>
+            <textarea type="text" name="message" id="message" placeholder="Enter message" class="form-control md-textarea" rows="3"></textarea>
         </div>
 
         <div class="text-center mt-4">
-            <button class="btn btn-outline-primary" type="submit">Send<i class="fa fa-paper-plane-o ml-2"></i></button>
+            <button class="btn btn-outline-primary" value="Send Message" type="submit">Send<i class="fa fa-paper-plane-o ml-2"></i></button>
         </div>
     </form>
     <!-- Material form contact -->
