@@ -1,4 +1,4 @@
-﻿<script>
+﻿
     function initMap(){
 
         // 29.784781,30.8499393
@@ -35,4 +35,3 @@
         infowindow.open(map, marker);
     });
     }
-</script>
