@@ -75,12 +75,20 @@
 
 
     </environment>
+
     <environment exclude="Development">
         <script src="~/lib/jquery/dist/jquery.js"></script>
         <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
         <script src="~/js/navbar.js"></script>
         <script src="~/js/particle.js"></script>
         <script src="~/js/site.js" asp-append-version="true"></script>
+
+        <script>
+            particlesJS.load('particle', 'lib/json/particles.json', function () {
+                console.log('particles.json has successfully loaded.');
+            });
+        </script>
+
     </environment>
 
     @RenderSection("Scripts", required: false)
