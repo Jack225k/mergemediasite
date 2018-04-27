@@ -3,99 +3,69 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@ViewData["Title"] - MergeMedia</title>
 
-    <environment include="Development">
-        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
-        <link rel="stylesheet" href="~/css/site.css" />
-        <link href="~/css/navbar.css" rel="stylesheet" />
-        <link href="~/css/main.css" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link href="~/css/navbar.css" rel="stylesheet" />
+    <link href="~/css/main.css" rel="stylesheet" />
 
+    <environment include="Development">
     </environment>
+
     <environment exclude="Development">
-        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
-        <link rel="stylesheet" href="~/css/site.css" />
-        <link href="~/css/navbar.css" rel="stylesheet" />
-        <link href="~/css/main.css" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     </environment>
-    
+
 </head>
 <body>
->
-    </nav>
 
-    <nav class="navbar navbar-dark btmborder navbar-expand-lg mb-4 top-bar navbar-static-top sps sps--abv">
+    @await Html.PartialAsync("_Nav")
 
-        <div class="container">
-            <button class="navbar-toggler btn-transparent-white navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse1" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon "></span>
-            </button>
-            <a class="navbar-brand mx-auto" href="#">Merge<span>Media</span></a>
-            <div class="collapse navbar-collapse" id="navbarCollapse1">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"> <a class="nav-link" asp-controller="Home" asp-action="Index">Home</a> </li>
-                    <li class="nav-item"> <a class="nav-link" asp-controller="Home" asp-action="About">About</a> </li>
-                    <li class="nav-item"> <a class="nav-link" asp-controller="Home" asp-action="Technologies">Technologies</a> </li>
-                    <li class="nav-item"> <a class="nav-link" asp-controller="Home" asp-action="Portfolio">Portfolio</a> </li>
-                    <li class="nav-item"> <a class="nav-link" asp-controller="Home" asp-action="Hosting">Hosting</a> </li>
-                    <li class="nav-item"> <a class="nav-link" asp-controller="Home" asp-action="Contact">Contact</a> </li>
-                </ul>
-            </div>
-        </div>
-
-    </nav>
     <div class="clearfix"></div>
     @*render the other pages*@
 
-    
+
 
     @RenderBody()
-        
+
 
 
     @*Render Footer Area Area*@
 
-    @await Html.PartialAsync("_Footer");
-   
+    @await Html.PartialAsync("_Footer")
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+    <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="~/js/navbar.js"></script>
+    <script src="~/js/particle.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    <script src="~/js/maps.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDUaprX02-eJatOgKdpO-o41wTXKksonGQ&callback=initMap"></script>
+
+
 
     <environment include="Development">
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 
-        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
-        <script src="~/js/navbar.js"></script>
-        <script src="~/js/particle.js"></script>
-        <script src="~/js/site.js" asp-append-version="true"></script>
-
-        <script>
-            particlesJS.load('particle', 'lib/json/particles.json', function () {
-                console.log('particles.json has successfully loaded.');
-            });
-        </script>
-
-
+        @*<script>
+                particlesJS.load('particle', 'lib/json/particles.json', function () {
+                    console.log('particles.json has successfully loaded.');
+                });
+            </script>*@
 
 
     </environment>
 
     <environment exclude="Development">
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 
-        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
-        <script src="~/js/navbar.js"></script>
-        <script src="~/js/particle.js"></script>
-        <script src="~/js/site.js" asp-append-version="true"></script>
-
-        <script>
-            particlesJS.load('particle', 'lib/json/particles.json', function () {
-                console.log('particles.json has successfully loaded.');
-            });
-        </script>
-
-        <script src="~/js/maps.js"></script>
-        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDUaprX02-eJatOgKdpO-o41wTXKksonGQ&callback=initMap"></script>
-
+        @*<script>
+                particlesJS.load('particle', 'lib/json/particles.json', function () {
+                    console.log('particles.json has successfully loaded.');
+                });
+            </script>*@
     </environment>
 
     @RenderSection("Scripts", required: false)
