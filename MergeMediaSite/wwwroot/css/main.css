@@ -1,12 +1,22 @@
 
 body {
-
     font-family: quicksand;
-    background:#808080;
-
+    background: #5687DB;
 }
 
-body {
+
+.favicon{
+    height:60px;
+    padding-right:20px;
+    
+}
+
+.text-lightgrey{
+    color:#c4c4c4;
+}
+
+.footerlogo{
+    width:80%;
     
 }
 
