@@ -1,8 +1,5 @@
 
-body {
-    font-family: quicksand;
-    background: #5687DB;
-}
+
 
 
 .favicon{
@@ -56,9 +53,6 @@ body {
     z-index: 0;
 }
 
-.icon{
-    float:right;
-}
 
 .three{
 

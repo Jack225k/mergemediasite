@@ -17,28 +17,54 @@
 </environment>
 
 <!-- this comment does show up on the hosted site source code... (Not recommended)-->
-
-<img src="~/images/svg/left.svg" id="left" alt="">
-<img src="~/images/svg/right.svg" id="right" alt="">
-<img src="~/images/svg/glowbox.svg" id="glowbox" alt="">
-<img src="~/images/svg/blobs.svg" id="blob" alt="">
-
+@*<img src="~/images/svg/left.svg" id="left" alt="">
+    <img src="~/images/svg/right.svg" id="right" alt="">
+    <img src="~/images/svg/glowbox.svg" id="glowbox" alt="">
+    <img src="~/images/svg/blobs.svg" id="blob" alt="">
 
 
-<div class="btext">
 
-    <h1>Merge Media</h1>
-    <p>Affordable, high quality software solutions.</p>
+    <div class="btext">
 
-</div>
+        <h1>Merge Media</h1>
+        <p>Affordable, high quality software solutions.</p>
 
-<section id="home">
-
-    <div id="particle">
     </div>
 
+    <section id="home">
+
+        <div id="particle">
+        </div>
 
 
+
+    </section>*@
+<section class="hero-header text-white" style="background: url('assets/img/demo/team.jpg')">
+    <div class="container">
+        <div class="table">
+            <div class="header-text">
+                <div class="row">
+                    <div class="col-md-12 text-center p-t-40">
+                        <h1 class="cd-headline letters type big-heading rotate-2">
+                            <span>We create</span>
+                            <span class="cd-words-wrapper waiting">
+                                <b class="is-visible strawberry">brands</b>
+                                <b class="sunfollower">websites</b>
+                                <b class="mint">applications</b>
+
+                            </span>
+                        </h1>
+                        <div class="p-t-b-100">
+                            <a href="" class="btn-primary btn-big r-30">
+                                <i class="icon icon-arrow-right"></i>
+                                Hire Us Now!
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
 <div class="clearfix"></div>
@@ -47,7 +73,7 @@
 
 @*Render about section*@
 
-
+@await Html.PartialAsync("Services")
 @await Html.PartialAsync("AboutPartial")
 <div class="clearfix"></div>
 @*Technologies Section*@
