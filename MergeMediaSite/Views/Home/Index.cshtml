@@ -1,6 +1,22 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+<environment include="Development">
+    <!--
+        This comment will only show up for developers working on the project.
+        It will not display on the client render html version.
+
+        If you want to change something comment out the code in a developer mode. (like this comment)
+        If you don't it will be visible on the source code when the site it live, and you don't want that
+        for obvious reasons.
+
+        Regards, Jack.
+
+    -->
+
+</environment>
+
+<!-- this comment does show up on the hosted site source code... (Not recommended)-->
 
 <img src="~/images/svg/left.svg" id="left" alt="">
 <img src="~/images/svg/right.svg" id="right" alt="">
