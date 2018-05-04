@@ -39,6 +39,7 @@
 
 
     </section>*@
+
 <section class="hero-header text-white" style="background: url('assets/img/demo/team.jpg')">
     <div class="container">
         <div class="table">
@@ -72,19 +73,26 @@
 @*Website Description*@
 
 @*Render about section*@
-
-@await Html.PartialAsync("Services")
-@await Html.PartialAsync("AboutPartial")
+@await Html.PartialAsync("_Structure")
 <div class="clearfix"></div>
+
+
+@await Html.PartialAsync("_Skills")
+<div class="clearfix"></div>
+
 @*Technologies Section*@
-@await Html.PartialAsync("TechnologiesPartial")
+@await Html.PartialAsync("_Technologies")
+
 <div class="clearfix"></div>
 @*Demo Site Section*@
-@await Html.PartialAsync("DemoPartial")
+@await Html.PartialAsync("_Mockup")
 <div class="clearfix"></div>
 @*Hosting Site Section*@
-@await Html.PartialAsync("HostingPartial")
+@await Html.PartialAsync("_Hosting")
 <div class="clearfix"></div>
+@await Html.PartialAsync("_Contact2")
+<div class="clearfix"></div>
+
 
 
 
