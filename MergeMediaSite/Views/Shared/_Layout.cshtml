@@ -39,6 +39,22 @@
         </div>
     </div>
 
+    <div id="app" class="paper-loading">
+        <div class="btn-fixed-top-left">
+            <button
+               type="button"
+               data-toggle="modal"
+               data-target="#modalLogin"
+               class="btn-fab  btn-primary shadow1">
+                <i class="icon icon-message"></i>
+            </button>
+        </div>
+
+    </div>
+
+
+
+
     <div class="promotionsBar gradient responsive">
         <div class="container">
             <div class="promotionsMsg">
@@ -70,13 +86,16 @@
     </div>
 
 
+    
+    @await Html.PartialAsync("_chat")
+
 
 
     <script src="~/assets/js/app.js"></script>
 
     <script src="~/js/maps.js"></script>
-    <script async 
-            defer 
+    <script async
+            defer
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDUaprX02-eJatOgKdpO-o41wTXKksonGQ&callback=initMap">
     </script>
 

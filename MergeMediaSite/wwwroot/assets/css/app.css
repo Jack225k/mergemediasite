@@ -1,4 +1,4 @@
-@charset "UTF-8";
+﻿@charset "UTF-8";
 /**
  *
  *  Command : gulp watch or gulp styles
@@ -22555,10 +22555,10 @@ input[type="checkbox"], input[type="radio"] {
 }
 
 .btn-fixed-top-left {
-  position: fixed;
-  left: 52px;
-  top: 66px;
-  z-index: 99;
+    left: 95%;
+    top: 90%;
+    position: fixed;
+    z-index: 999;
 }
 
 .btn-primary {
