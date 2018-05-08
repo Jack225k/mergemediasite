@@ -1,8 +1,58 @@
-﻿
+﻿@model IEnumerable<MergeMediaSite.Models.HostingTable>
+
 @{
     ViewData["Title"] = "Hosting";
 }
 
-@await Html.PartialAsync("_HostingPartial")
+@await Html.PartialAsync("_Hosting")
 <div class="clearfix"></div>
 
+
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Instance)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Cores)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Ram)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Storage)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Price)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Instance)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Cores)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Ram) GB
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Storage) GB
+                    </td>
+                    <td>
+                        ~R @Html.DisplayFor(modelItem => item.Price) /month
+                    </td>
+                    
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

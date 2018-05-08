@@ -1,0 +1,48 @@
+﻿@model MergeMediaSite.Models.HostingTable
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>HostingTable</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Instance)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Instance)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Cores)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Cores)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Ram)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Ram)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Storage)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Storage)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Prices)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Prices)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

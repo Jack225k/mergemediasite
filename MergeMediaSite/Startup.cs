@@ -6,6 +6,9 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
+using Microsoft.EntityFrameworkCore;
+using MergeMediaSite.Models;
 
 namespace MergeMediaSite
 {
@@ -22,6 +25,7 @@ namespace MergeMediaSite
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            services.AddDbContext<ClassContext>(options => options.UseSqlServer(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=HostingInfo;Integrated Security=True;Connect Timeout=30;"));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -45,6 +49,9 @@ namespace MergeMediaSite
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
+
+            
+            
         }
     }
 }
