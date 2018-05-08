@@ -41,11 +41,10 @@
 
     <div id="app" class="paper-loading">
         <div class="btn-fixed-top-left">
-            <button
-               type="button"
-               data-toggle="modal"
-               data-target="#modalLogin"
-               class="btn-fab  btn-primary shadow1">
+            <button type="button"
+                    data-toggle="modal"
+                    data-target="#modalChat"
+                    class="btn-fab  btn-primary shadow1">
                 <i class="icon icon-message"></i>
             </button>
         </div>
@@ -60,7 +59,7 @@
             <div class="promotionsMsg">
                 <p>
                     We have new <span class="badge bg-danger">Microsoft Azure Based</span> Managed Cloud Hosting plans for as low as R99 p/m.
-                </p> <a href="https://themeforest.net/item/paper-mulitipurpose-html-template/20382955"
+                </p> <a asp-action="Hosting" asp-controller="Home"
                         class="btn btn-line r-30 s-12">
                     Check It Out
                 </a>
@@ -86,14 +85,15 @@
     </div>
 
 
-    
+
     @await Html.PartialAsync("_chat")
+    @await Html.PartialAsync("_Login")
 
 
 
     <script src="~/assets/js/app.js"></script>
 
-    
+
     <script async
             defer
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDUaprX02-eJatOgKdpO-o41wTXKksonGQ">
