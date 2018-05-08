@@ -1,7 +1,7 @@
-﻿<div class="content-wrapper animatedParent animateOnce">
+﻿<div class="content-wrapper animatedParent animateOnce" id="contact">
     <div class="container">
 
-        <h2 class="text-center">Contact Us</h2>
+        <h2 class="text-center p-40">Contact Us</h2>
 
         <div data-id="contact-map" class="g-map" data-address="39 Pioneer Road, Kloof" data-zoomlvl="14"></div>
 
@@ -46,7 +46,7 @@
                         <form id="contactform" action="/assets/php/submit.php" method="post" novalidate>
                             <div class="row">
                                 <div class="col-12 col-lg-6">
-                                    <label for="name">Name</label>
+                                    <label for="name">Name<span class="text-red"> *</span></label>
                                     <input type="text"
                                            class="form-control"
                                            id="name"
@@ -57,12 +57,21 @@
                                     </div>
                                 </div>
                                 <div class="col-12 col-lg-6">
-                                    <label for="subject" class="required">Subject</label>
-                                    <input type="text"
+                                    <label for="subject" class="required">Subject <span class="text-red"> *</span></label>
+                                    <select class="form-control" id="select">
+                                        <option>General Questions</option>
+                                        <option>Technical Support</option>
+                                        <option>Development</option>
+                                        <option>Hosting</option>
+
+
+                                    </select>
+                                    @*<input type="text"
                                            class="form-control"
                                            id="subject"
                                            placeholder=""
-                                           required>
+                                           required>*@
+
                                     <div class="invalid-feedback">
                                         Please enter subject.
                                     </div>
@@ -75,7 +84,7 @@
                                            placeholder="">
                                 </div>
                                 <div class="col-12 col-lg-6">
-                                    <label for="email" class="required">Email Address</label>
+                                    <label for="email" class="required">Email Address <span class="text-red"> *</span></label>
                                     <input type="email"
                                            class="form-control"
                                            id="email"
@@ -91,7 +100,7 @@
                                            name="phone" id="phone">
                                 </div>
                             </div>
-                            <label for="message" class="required">Message</label>
+                            <label for="message" class="required">Message<span class="text-red"> *</span></label>
                             <textarea placeholder="Message"
                                       name="message"
                                       id="message"
@@ -122,42 +131,42 @@
 
 <script>
 
-    function initMap() {
+    //function initMap() {
 
-        // 29.784781,30.8499393
-        var location = { lat: -29.784781, lng: 30.8499393 }
-        var map = new google.maps.Map(document.getElementById("map"), {
-            zoom: 12,
-            center: location,
-            disableDefaultUI: true,
-            gestureHandling: 'none',
-            zoomControl: false
-        });
+    //    // 29.784781,30.8499393
+    //    var location = { lat: -29.784781, lng: 30.8499393 }
+    //    var map = new google.maps.Map(document.getElementById("map"), {
+    //        zoom: 12,
+    //        center: location,
+    //        disableDefaultUI: true,
+    //        gestureHandling: 'none',
+    //        zoomControl: false
+    //    });
 
-        var contentString = '<div id="content">' +
-            '<div id="siteNotice">' +
-            '</div>' +
-            '<h1 id="firstHeading" class="firstHeading">Merge Media</h1>' +
-            '<div id="bodyContent">' +
-            '<p><b>Merge Media</b>, is a software development company based at 39 Pioneer road in Kloof. They provide software solutions to personal and business clients at affordable pricing.</p>' +
-            '<a href="https://goo.gl/maps/FWG2y6HdQJG2" target="_blank">Click here to navigate to the destination</a>' +
-            '</div>' +
-            '</div>';
+    //    var contentString = '<div id="content">' +
+    //        '<div id="siteNotice">' +
+    //        '</div>' +
+    //        '<h1 id="firstHeading" class="firstHeading">Merge Media</h1>' +
+    //        '<div id="bodyContent">' +
+    //        '<p><b>Merge Media</b>, is a software development company based at 39 Pioneer road in Kloof. They provide software solutions to personal and business clients at affordable pricing.</p>' +
+    //        '<a href="https://goo.gl/maps/FWG2y6HdQJG2" target="_blank">Click here to navigate to the destination</a>' +
+    //        '</div>' +
+    //        '</div>';
 
-        var infowindow = new google.maps.InfoWindow({
-            content: contentString
-        });
+    //    var infowindow = new google.maps.InfoWindow({
+    //        content: contentString
+    //    });
 
-        var marker = new google.maps.Marker({
-            position: location,
-            map: map,
-            title: "39 Pioneer Road, Kloof."
-        });
+    //    var marker = new google.maps.Marker({
+    //        position: location,
+    //        map: map,
+    //        title: "39 Pioneer Road, Kloof."
+    //    });
 
-        marker.addListener('click', function () {
-            infowindow.open(map, marker);
-        });
-    }
+    //    marker.addListener('click', function () {
+    //        infowindow.open(map, marker);
+    //    });
+    //}
 
 </script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDUaprX02-eJatOgKdpO-o41wTXKksonGQ&callback=initMap"></script>
+

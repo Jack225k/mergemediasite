@@ -14,5 +14,7 @@ namespace MergeMediaSite.Models
         }
 
         public DbSet<MergeMediaSite.Models.HostingTable> HostingTables { get; set; }
+        public DbSet<MergeMediaSite.Models.Portfolio> Portfolios { get; set; }
+
     }
 }

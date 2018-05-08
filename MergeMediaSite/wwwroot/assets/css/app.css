@@ -21380,6 +21380,8 @@ a.text-dark:focus, a.text-dark:hover {
 
 /** /!!! End of core css Should not edit !!!/**/
 /* Pager */
+
+
 .lSSlideOuter .lSPager.lSpg {
   margin: 10px 0 0;
   padding: 0;
@@ -21472,7 +21474,7 @@ a.text-dark:focus, a.text-dark:hover {
   display: block;
   top: 50%;
   height: 32px;
-  background-image: url("../img/controls.png");
+  background-image: url(/*../img/controls.png*/);
   cursor: pointer;
   position: absolute;
   z-index: 99;

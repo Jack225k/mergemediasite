@@ -45,7 +45,7 @@ namespace MergeMediaSite.Controllers
         public IActionResult Portfolio()
         {
             ViewData["Message"] = "Portfolio Page";
-            return View();
+            return View(_context.Portfolios.ToList());
         }
         [Route("Hosting")]
         public IActionResult Hosting()

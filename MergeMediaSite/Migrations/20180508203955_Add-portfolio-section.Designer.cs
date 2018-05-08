@@ -11,9 +11,10 @@ using System;
 namespace MergeMediaSite.Migrations
 {
     [DbContext(typeof(ClassContext))]
-    partial class ClassContextModelSnapshot : ModelSnapshot
+    [Migration("20180508203955_Add-portfolio-section")]
+    partial class Addportfoliosection
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
