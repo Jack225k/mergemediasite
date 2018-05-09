@@ -25,7 +25,7 @@ namespace MergeMediaSite
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
-            services.AddDbContext<ClassContext>(options => options.UseSqlServer(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=HostingInfo;Integrated Security=True;Connect Timeout=30;"));
+            services.AddDbContext<ClassContext>(options => options.UseSqlServer(@"Data Source=mergeserve.database.windows.net;Initial Catalog=mergeData;Integrated Security=False;User ID=mergeadmin;Password=ConnectionServer123!;Connect Timeout=60;Encrypt=True;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False"));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
