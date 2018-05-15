@@ -27,6 +27,22 @@
             left: 50%;
         }
     </style>
+
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'assets/js/chat.js';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
+
+
 </head>
 <environment include="Development">
 </environment>
@@ -39,7 +55,7 @@
         </div>
     </div>
 
-    <div id="app" class="paper-loading">
+    @*<div id="app" class="paper-loading">
         <div class="btn-fixed-top-left">
             <button type="button"
                     data-toggle="modal"
@@ -49,7 +65,7 @@
             </button>
         </div>
 
-    </div>
+    </div>*@
 
 
 
@@ -86,7 +102,7 @@
 
 
 
-    @await Html.PartialAsync("_chat")
+    @*@await Html.PartialAsync("_chat")*@
     @await Html.PartialAsync("_Login")
 
 
