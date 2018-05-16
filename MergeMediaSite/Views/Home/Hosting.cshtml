@@ -8,38 +8,70 @@
 <div class="clearfix"></div>
 
 
+<section class="pricing">
+    <div class="container p-t-40">
 
-<div class="container center p-t-40">
-    <div class="text-center p-b-40">
-        <h2>Additional Plans</h2>
-        <p>These plan prices are based off of the prices provided by Microsoft Azure Cloud Services. <br />Click here for the app services pricing. <br />Click here for the VM Service Pricing.</p>
-    </div>
-    <table class="table">
-        <thead>
-            <tr>
-                <th>
-                    @Html.DisplayNameFor(model => model.Instance)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Cores)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Ram)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Storage)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Price)
-                </th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody>
 
-            @foreach (var item in Model)
-            {
+
+
+
+
+        <div class="text-center p-b-40">
+            <h2>Additional Plans</h2>
+            <p>These plan prices are based off of the prices provided by Microsoft Azure Cloud Services. <br />Click here for the app services pricing. <br />Click here for the VM Service Pricing.</p>
+        </div>
+        @*<table class="table">
+            <thead>
                 <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Instance)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Cores)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Ram)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Storage)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Price)
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>*@
+
+
+        <div class="row">
+
+        @foreach (var item in Model)
+        {
+
+            <div class="col-md-4 pt-4">
+                <div class="pricebox">
+                    <h4 class="title">Plan - @Html.DisplayFor(modelItem => item.Instance)</h4>
+
+                    <span class="price">~@Html.DisplayFor(modelItem => item.Price)</span>
+                    <span class="dollar">R</span>
+
+                    <span class="slash">/</span>
+                    <span class="month">pm</span>
+                    <ul>
+
+                        <li><b>@Html.DisplayFor(modelItem => item.Ram) GB</b> RAM</li>
+                        <li><b>@Html.DisplayFor(modelItem => item.Storage) GB</b> Storage</li>
+                        <li><b>@Html.DisplayFor(modelItem => item.Cores) vCPU</b> Cores</li>
+                        <li><b>Unlimited</b> subdomains</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary btn-lg">Select Plan</a>
+                </div>
+            </div>
+
+
+
+            @*<tr>
                     <td>
                         @Html.DisplayFor(modelItem => item.Instance)
                     </td>
@@ -55,9 +87,11 @@
                     <td>
                         ~R @Html.DisplayFor(modelItem => item.Price) /month
                     </td>
-                    
-                </tr>
-            }
-        </tbody>
-    </table>
-</div>
+
+                </tr>*@
+        }
+        @*</tbody>
+            </table>*@
+            </div>
+    </div>
+</section>
