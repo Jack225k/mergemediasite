@@ -1,0 +1,81 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<environment include="Development">
+    <!--
+        This comment will only show up for developers working on the project.
+        It will not display on the client render html version.
+
+        If you want to change something comment out the code in a developer mode. (like this comment)
+        If you don't it will be visible on the source code when the site it live, and you don't want that
+        for obvious reasons.
+
+        Regards, Jack.
+
+    -->
+
+</environment>
+
+<!-- this comment does show up on the hosted site source code... (Not recommended)-->
+@*<img src="~/images/svg/left.svg" id="left" alt="">
+    <img src="~/images/svg/right.svg" id="right" alt="">
+    <img src="~/images/svg/glowbox.svg" id="glowbox" alt="">
+    <img src="~/images/svg/blobs.svg" id="blob" alt="">
+
+
+
+    <div class="btext">
+
+        <h1>Merge Media</h1>
+        <p>Affordable, high quality software solutions.</p>
+
+    </div>
+
+    <section id="home">
+
+        <div id="particle">
+        </div>
+
+
+
+    </section>*@
+
+
+
+
+@*Top of the website.*@
+@await Html.PartialAsync("_Welcome_Area")
+
+@*Website Description*@
+@await Html.PartialAsync("_Who_We_Are")
+
+@await Html.PartialAsync("_Services")
+
+@await Html.PartialAsync("_Call_To_Action")
+
+@await Html.PartialAsync("_Features")
+
+@*@await Html.PartialAsync("_Video_Area")*@
+
+@await Html.PartialAsync("_Recent_Work")
+
+@await Html.PartialAsync("_Cool_Facts")
+
+@await Html.PartialAsync("_Price_Table")
+
+@await Html.PartialAsync("_Testimonials")
+
+@*@await Html.PartialAsync("_Team_Area")
+
+@await Html.PartialAsync("_Blog_Area")*@
+
+@await Html.PartialAsync("_Contact_Area")
+
+
+
+
+
+@*Read More about partial views
+    https://docs.microsoft.com/en-us/aspnet/core/mvc/views/partial
+*@
+

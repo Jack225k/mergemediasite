@@ -1,0 +1,53 @@
+﻿@model IEnumerable<Mergemediawebsite.Models.Portfolio>
+@{
+    ViewData["Title"] = "Portfolio";
+}
+
+<div class="bg-light">
+    <div class="p-t-b-50">
+        <div class="container text-center">
+            <h1 class="jumbotron-heading">Merge Media Site Portfolio</h1>
+            <p class="lead text-muted">Here is a collection of some of our demo websites. See if you like anything to help us better help you with your project.</p>
+
+        </div>
+    </div>
+
+
+
+    <div class="album">
+        <div class="container">
+            <div class="row">
+
+                <!-- Render Partial Section -->
+
+                @foreach (var item in Model)
+                {
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top" src="~/@item.ImgHref" alt="mergemedia.co.za">
+                            <div class="card-body">
+                                <h2>@item.Title</h2>
+                                <p class="card-text">@item.Desc</p>
+                                <div class="d-flex justify-content-between align-items-center">
+
+                                    <a href="~/@item.SiteHref" target="_blank" class="btn btn-sm btn-outline-secondary">View</a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                }
+
+
+
+                <!--Stop Render Que-->
+
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+

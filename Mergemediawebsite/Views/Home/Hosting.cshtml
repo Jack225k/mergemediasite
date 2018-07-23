@@ -1,0 +1,63 @@
+﻿@model IEnumerable<Mergemediawebsite.Models.HostingTable>
+
+@{
+    ViewData["Title"] = "Hosting";
+}
+
+@await Html.PartialAsync("_Hosting")
+<div class="clearfix"></div>
+
+
+
+<div class="container center p-t-40">
+    <div class="text-center p-b-40">
+        <h2>Additional Plans</h2>
+        <p>These plan prices are based off of the prices provided by Microsoft Azure Cloud Services. <br />Click here for the app services pricing. <br />Click here for the VM Service Pricing.</p>
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Instance)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Cores)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Ram)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Storage)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Price)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Instance)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Cores)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Ram) GB
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Storage) GB
+                    </td>
+                    <td>
+                        ~R @Html.DisplayFor(modelItem => item.Price) /month
+                    </td>
+
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
