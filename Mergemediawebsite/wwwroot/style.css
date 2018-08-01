@@ -52,6 +52,11 @@
 :: 1.0 Base CSS Start
 ================== */
 
+#mutemessage{
+    display:none;
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -613,6 +618,7 @@ ol {
     top: 0;
     left: 0;
     width: 100%;
+    
 }
 
 .dark.classy-nav-container {
@@ -620,14 +626,17 @@ ol {
     -webkit-transition-duration: 500ms;
     -o-transition-duration: 500ms;
     transition-duration: 500ms;
+    
 }
 
 .classy-nav-container.classy-sticky {
-    background-color: #777;
+    background-color: #131517;
+    
 }
 
 .classy-navbar {
     padding: 0.5em 5em;
+    border-bottom: 1px solid grey;
 }
 
 .nav-brand {

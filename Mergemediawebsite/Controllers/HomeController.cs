@@ -59,6 +59,14 @@ namespace Mergemediawebsite.Controllers
             return View();
         }
 
+        [Route("Confirm")]
+        public IActionResult Confirm()
+        {
+            ViewData["Message"] = "Message Sent";
+
+            return View("received");
+        }
+
         public IActionResult Error()
         {
             //return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
