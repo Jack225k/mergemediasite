@@ -56,6 +56,14 @@
     display:none;
 }
 
+.servicesizelimit{
+    height:65px;
+}
+
+.light-grey{
+    color:lightgray;
+}
+
 
 * {
     margin: 0;

@@ -67,6 +67,14 @@ namespace Mergemediawebsite.Controllers
             return View("received");
         }
 
+        [Route("Blog")]
+        public IActionResult Blog()
+        {
+            ViewData["Message"] = "This page is currently under maintenance...";
+
+            return View("maintenance");
+        }
+
         public IActionResult Error()
         {
             //return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
