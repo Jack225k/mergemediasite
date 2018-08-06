@@ -43,7 +43,10 @@ namespace Mergemediawebsite.Controllers
         public IActionResult Portfolio()
         {
             ViewData["Message"] = "Portfolio Page";
-            return View(_context.Portfolios.ToList());
+            var query = from c in _context.Portfolios
+                        orderby Guid.NewGuid()
+                        select c;
+            return View(query);
         }
         [Route("Hosting")]
         public IActionResult Hosting()

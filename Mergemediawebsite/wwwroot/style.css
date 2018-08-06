@@ -148,6 +148,7 @@ ol {
     -webkit-animation: tomcatRotate 2400ms linear infinite;
     animation: tomcatRotate 2400ms linear infinite;
     z-index: 999;
+    
 }
 
 #tomcat-load:before {
@@ -164,6 +165,7 @@ ol {
     border-top-color: #e66e22;
     -webkit-animation: tomcatRotate 2700ms linear infinite;
     animation: tomcatRotate 2700ms linear infinite
+    
 }
 
 #tomcat-load:after {
