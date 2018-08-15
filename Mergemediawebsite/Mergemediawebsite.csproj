@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <Content Include="wwwroot\.well-known\pki-validation\fileauth.txt" />
+    <Content Include="wwwroot\.well-known\pki-validation\htmlpage.html" />
   </ItemGroup>
 
   <ItemGroup>
