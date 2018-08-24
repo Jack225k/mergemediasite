@@ -1,0 +1,57 @@
+﻿@model IEnumerable<Mergemediawebsite.Models.Portfolio>
+@{
+    ViewData["Title"] = "Portfolio";
+}
+
+<section class="our_recent_work_area section_padding_90_100 clearfix">
+    <div class="container">
+        <div class="row">
+            <!-- Heading Text -->
+            <div class="col-12">
+                <div class="section-heading text-center">
+                    <h2>Some of our projects</h2>
+                    <p>These are some of the websites we have built for demonstration purposes.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    @foreach (var item in Model)
+    {
+
+        <div class="portfolio_gallery_item bg-img w-50" style="background-image: url(/@item.ImgHref);">
+            <!-- Single Content -->
+            <div class="single_content">
+                <div class="tomcat-table">
+                    <div class="tomcat-table-cell">
+                        <!-- Project Title-->
+                        <div class="project_title">
+                            <a href="~/@item.SiteHref">
+                                <h5>@item.Title</h5>
+                            </a>
+                            <div class="line"></div>
+                            <p>@item.Desc</p>
+                            <a href="~/@item.SiteHref" target="_blank" class="project-btn">View project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    }
+
+
+</section>
+
+                <!-- Render Partial Section -->
+
+               
+
+
+                <!--Stop Render Que-->
+
+
+
+
