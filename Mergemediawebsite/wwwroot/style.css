@@ -756,7 +756,7 @@ h6{
 	background-size: cover;
 	background-position:center bottom;
 	
-	background-image:url(/lateral-html/Demo01/images/bg.png), linear-gradient(rgb(146, 255, 255), lightgrey), -webkit-linear-gradient(#182964, #030c2c);
+	background-image:url(/images/bg.png), linear-gradient(rgb(146, 255, 255), lightgrey), -webkit-linear-gradient(#182964, #030c2c);
 	
 	position:relative;
 	overflow:hidden;
@@ -2958,4 +2958,9 @@ svg.svg-cta-bottom {
 
 .light-grey{
 	color:#e4e5e6;
+}
+
+.icon{
+
+    height:50px;
 }
