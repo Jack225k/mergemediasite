@@ -824,7 +824,7 @@ h6{
   float:right; 
   text-align:right;
 	position:absolute;
-	bottom:2%;
+	bottom:40%;
 	right:2%;
 	z-index:222;
   animation: bounce 2s cubic-bezier(.5,.05,.5,.5);

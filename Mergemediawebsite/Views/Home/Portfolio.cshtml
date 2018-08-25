@@ -1,7 +1,13 @@
-﻿@model IEnumerable<Mergemediawebsite.Models.Portfolio>
+﻿@{
+    ViewData["Title"] = "Portfolio";
+    Layout = "~/Views/Shared/_Portfolio_Layout.cshtml";
+}
+@model IEnumerable<Mergemediawebsite.Models.Portfolio>
 @{
     ViewData["Title"] = "Portfolio";
 }
+
+
 
 <section class="our_recent_work_area section_padding_90_100 clearfix">
     <div class="container">
@@ -43,15 +49,24 @@
     }
 
 
+     
+
+
 </section>
 
-                <!-- Render Partial Section -->
+<div class="container">
+    <div class="row">
+        <!-- Heading Text -->
+        <div class="col-12">
+            <div class="section-heading text-center">
+                <h2>The End For Now...</h2>
+                <p>We are constantly adding more websites for you to view. <br />
+                If you want to request a custom website to be built for you please contact us on the Main Website Page.</p>
+                <p>Click <a href="~/">Here</a> to be automatically redirected.
+            </div>
+        </div>
+    </div>
+</div>
 
-               
-
-
-                <!--Stop Render Que-->
-
-
-
-
+<!-- Render Partial Section -->
+<!--Stop Render Que-->
