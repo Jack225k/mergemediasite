@@ -1,5 +1,4 @@
-﻿
-<section class="modal modal--signuplogin">
+﻿<section class="modal modal--signuplogin">
     <div class="modal__overlay modal__overlay--toggle"></div>
     <div class="modal__wrapper modal-transition">
 
@@ -19,18 +18,18 @@
                 <div class="modal__form form">
                     <h2 class="form__title">Login</h2>
                     <form class="form__container" id="LoginForm" method="post" action="index.html">
-                        <span class="form__input input input--effect">
-                            <input name="name" class="input__field input__field--effect" type="text" id="input-name" />
-                            <label class="input__label input__label--effect input__label--effect-color-1" for="input-name">
-                                <span class="input__label-content input__label-content--effect">Name</span>
-                            </label>
-                        </span>
-                        <span class="form__input input input--effect">
-                            <input name="emails" class="input__field input__field--effect" type="text" id="input-emails" />
-                            <label class="input__label input__label--effect input__label--effect-color-1" for="input-emails">
-                                <span class="input__label-content input__label-content--effect">Email</span>
-                            </label>
-                        </span>
+
+                        <div class="form__row">
+                            <label class="form__label" for="namec">Name</label>
+                            <input name="namec" id="namec" class="form__input" type="text" />
+                            <span class="form__row-border"></span>
+                        </div>
+                        <div class="form__row">
+                            <label class="form__label">Email</label>
+                            <input name="emailc" class="form__input" type="text" />
+                            <span class="form__row-border"></span>
+                        </div>
+
                         <div class="modal__checkbox"><input id="remember" name="remember" value="remember" checked type="checkbox"><label for="remember">Keep me Signed in</label></div>
                         <div class="modal__switch modal__switch--forgot" data-popup="forgot">Forgot Password?</div>
                         <input type="submit" name="submit" class="form__submit btn btn--green-bg" id="submitl" value="LOGIN" />
@@ -42,12 +41,11 @@
                 <div class="modal__form form">
                     <h2 class="form__title">Forgot Password</h2>
                     <form class="form__container" id="ForgotForm" method="post" action="index.html">
-                        <span class="form__input input input--effect">
-                            <input name="emailf" class="input__field input__field--effect" type="text" id="input-emailf" />
-                            <label class="input__label input__label--effect input__label--effect-color-1" for="input-emailf">
-                                <span class="input__label-content input__label-content--effect">Email</span>
-                            </label>
-                        </span>
+                        <div class="form__row">
+                            <label class="form__label">Email</label>
+                            <input name="emailf" class="form__input" type="text" />
+                            <span class="form__row-border"></span>
+                        </div>
                         <input type="submit" name="submit" class="form__submit btn btn--green-bg" id="submitf" value="RESET PASSWORD" />
                     </form>
                 </div>
@@ -63,24 +61,21 @@
                 <div class="modal__form form">
                     <h2 class="form__title">Signup</h2>
                     <form class="form__container" id="SignupForm" method="post" action="index.html">
-                        <span class="form__input input input--effect">
-                            <input name="username" class="input__field input__field--effect" type="text" id="input-username" />
-                            <label class="input__label input__label--effect input__label--effect-color-1" for="input-username">
-                                <span class="input__label-content input__label-content--effect">Username</span>
-                            </label>
-                        </span>
-                        <span class="form__input input input--effect">
-                            <input name="email" class="input__field input__field--effect" type="text" id="input-email" />
-                            <label class="input__label input__label--effect input__label--effect-color-1" for="input-email">
-                                <span class="input__label-content input__label-content--effect">Email</span>
-                            </label>
-                        </span>
-                        <span class="form__input input input--effect">
-                            <input name="password" class="input__field input__field--effect" type="password" id="input-password" />
-                            <label class="input__label input__label--effect input__label--effect-color-1" for="input-password">
-                                <span class="input__label-content input__label-content--effect">Password</span>
-                            </label>
-                        </span>
+                        <div class="form__row">
+                            <label class="form__label" for="names">Username</label>
+                            <input name="namec" id="names" class="form__input" type="text" />
+                            <span class="form__row-border"></span>
+                        </div>
+                        <div class="form__row">
+                            <label class="form__label">Email</label>
+                            <input name="emails" class="form__input" type="text" />
+                            <span class="form__row-border"></span>
+                        </div>
+                        <div class="form__row">
+                            <label class="form__label" for="pass">Password</label>
+                            <input name="pass" id="pass" class="form__input" type="password" />
+                            <span class="form__row-border"></span>
+                        </div>
                         <input type="submit" name="submit" class="form__submit btn btn--green-bg" id="submit" value="SIGNUP" />
                     </form>
                 </div>
@@ -113,4 +108,4 @@
             </div>
         </div>
     </div>
-</section> 
+</section>    <!-- Modal for animation -->
